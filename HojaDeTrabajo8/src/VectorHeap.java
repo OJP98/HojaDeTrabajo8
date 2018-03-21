@@ -123,10 +123,12 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     public String printHeap() {
         
         String lista = "";
+        int numero = data.size();
         
-	for (int i=0; i<data.size(); i++) {
-	    lista += (data.elementAt(i).toString());
+	for (int i=0; i<numero; i++) {
+	    lista += data.firstElement().toString();
 	    lista += "\n";
+            remove();
 	}
         
         return lista;
@@ -150,6 +152,6 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     @Override
     public E getFirst() {
         return data.firstElement();
-    }
+    }            
 
 }

@@ -1,4 +1,7 @@
-Maria Ramirez, apendicitis, A
-Carmen Sarmientos, dolores de parto, B
-Juan Perez, fractura de pierna, C
+Guillermo Link, Gamer extremo, C
+Oscar Juarez, Guapura intensa, A
 Lorenzo Toledo, chikunguya, E
+Maria Ramirez, apendicitis, A
+Juan Perez, fractura de pierna, C
+Carmen Sarmientos, dolores de parto, B
+Jose Cifuentes, Programador con experiencia, D

@@ -49,6 +49,6 @@ public class Paciente implements Comparable<Paciente>{
 
     @Override
     public int compareTo(Paciente t) {
-        return codigo.compareTo(t.getCodigo());
-    }   
+        return this.getCodigo().compareTo(t.getCodigo());
+    }           
 }
