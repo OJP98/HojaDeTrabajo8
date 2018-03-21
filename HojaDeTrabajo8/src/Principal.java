@@ -11,21 +11,19 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-        
-        boolean power = true;
+                
         int decision;
+        boolean power = true;
         Scanner teclado = new Scanner(System.in);
+        Procesos procesos = new Procesos();                
+                
+        procesos.leerArchivo("./pacientes.txt");
         
-        System.out.println("Bienvenido al programa!\n");    
+        String listaPacientes = procesos.imprimirPacientesVH();
         
-        while (power) {
-            
-            System.out.println("Ingrese ");
-            
-            
-        }
+        System.out.println("Bienvenido al programa!\n");
         
-        
-    }
-    
+        System.out.println("La lista de pacientes por atender implementada con VectorHeap es:\n");
+        System.out.println(listaPacientes);
+    }    
 }

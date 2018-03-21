@@ -1,3 +1,11 @@
+/**
+ * Clase que realiza las interacciones con el usuario.
+ * Algoritmos y estructura de datos - seccion 10.
+ * @author: Oscar Juarez - 17315
+ * @author: Guillermo Sandoval - 17577
+ * @version: 23/03/18
+ */
+
 public interface PriorityQueue<E extends Comparable<E>>
 {
 	public E getFirst();

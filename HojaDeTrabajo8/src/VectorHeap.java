@@ -1,3 +1,10 @@
+/**
+ * Clase que realiza las interacciones con el usuario.
+ * Algoritmos y estructura de datos - seccion 10.
+ * @author: Oscar Juarez - 17315
+ * @author: Guillermo Sandoval - 17577
+ * @version: 23/03/18
+ */
 
 import java.util.Vector;
 
@@ -111,24 +118,38 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		if (data.size() > 1) pushDownRoot(0);
 		return minVal;
 	}
-
-    @Override
-    public E getFirst() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+                    
+    public String printHeap() {
+        
+        String lista = "";
+        
+	for (int i=0; i<data.size(); i++) {
+	    lista += (data.elementAt(i).toString());
+	    lista += "\n";
+	}
+        
+        return lista;
     }
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (data.size() == 0);
     }
 
     @Override
     public int size() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return data.size();
     }
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        data = new Vector<E>();
     }
+
+    @Override
+    public E getFirst() {
+        return data.firstElement();
+    }
+
 }
