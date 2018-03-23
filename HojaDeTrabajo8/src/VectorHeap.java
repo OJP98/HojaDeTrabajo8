@@ -1,5 +1,5 @@
 /**
- * Clase que realiza las interacciones con el usuario.
+ * Implementacion del vectorHeap
  * Algoritmos y estructura de datos - seccion 10.
  * @author: Oscar Juarez - 17315
  * @author: Guillermo Sandoval - 17577
@@ -133,6 +133,33 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
         
         return lista;
     }
+    
+    public String atenderPaciente(){                
+        
+        if (!data.isEmpty()) {           
+            
+            return remove().toString();
+            
+        } else {
+            
+            return "No hay pacientes que atender";
+            
+        }                             
+    }
+    
+    public String verPaciente(){
+        
+        if (!data.isEmpty()) {
+            
+            return getFirst().toString();              
+            
+        } else {
+            
+            return "No hay pacientes proximos";
+            
+        }    
+        
+    }
 
     @Override
     public boolean isEmpty() {
@@ -152,6 +179,6 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     @Override
     public E getFirst() {
         return data.firstElement();
-    }            
+    }                  
 
 }
