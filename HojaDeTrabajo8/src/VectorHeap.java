@@ -108,6 +108,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 		}
 	}
 
+        @Override
 	public E remove()
 	// pre: !isEmpty()
 	// post: returns and removes minimum value from queue
@@ -120,14 +121,13 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
 	}
         
                     
-    public String printHeap() {
+    public String printHeap() {                
         
         String lista = "";
         int numero = data.size();
         
 	for (int i=0; i<numero; i++) {
-	    lista += data.firstElement().toString();
-	    lista += "\n";
+	    lista += data.firstElement().toString() + "\n";	    
             remove();
 	}
         
@@ -135,16 +135,18 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>
     }
     
     public String atenderPaciente(){                
-        
-        if (!data.isEmpty()) {           
+                                         
+        if (!data.isEmpty()) {
             
-            return remove().toString();
+            E paciente = remove();
+        
+            return paciente.toString();
             
         } else {
             
-            return "No hay pacientes que atender";
-            
-        }                             
+            return "No hay pacientes por atender";
+        }
+               
     }
     
     public String verPaciente(){

@@ -14,6 +14,7 @@ import static org.junit.Assert.*;
 public class VectorHeapTest {
     
     Procesos procesos = new Procesos();
+    VectorHeap<Paciente> VH = new VectorHeap<Paciente>();
     
     public VectorHeapTest() {
     }
@@ -28,6 +29,16 @@ public class VectorHeapTest {
     
     @Test
     public void atenderPacienteTest(){
+        
+        procesos.leerArchivo("./pacientes.txt");
+        
+        String pacientes = procesos.imprimirPacientesVH();               
+        
+        System.out.println(pacientes);
+
+        System.out.println("____________________________");
+        
+        System.out.println(VH.isEmpty());
         
     }
     
