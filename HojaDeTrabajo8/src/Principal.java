@@ -10,6 +10,9 @@ import java.util.Scanner;
 
 public class Principal {
 
+    /**
+     * Menu para el programa, el principal con el que interacciona el usuario
+    */
     public static void main(String[] args) {
                 
         int decision,implementacion=1; 
