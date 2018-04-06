@@ -94,7 +94,7 @@ public class Principal {
             
             if (decision==1) {
                 
-                System.out.println(implementacion+"");
+                System.out.println("Usando la implementacion numero "+implementacion+"");
                 
                 System.out.println("\nPaciente atendido: "); 
                 

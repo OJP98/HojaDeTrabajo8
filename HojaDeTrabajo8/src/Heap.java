@@ -61,7 +61,11 @@ public class Heap<E> {
             
         }        
     }
-    
+    /**
+     * Este metodo se encarga de dejarnos ver el ultimo elemento del vector Heap
+     * es el equivalente a un peak en el stack, de hecho llamandose igual heap
+     * Si esta vacio retorna que no hay un proximo paciente
+    */
     public String verPaciente(){
         
         if (!heap.isEmpty()) {
